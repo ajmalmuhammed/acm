@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var db = require('/connectDB');
+var db = require('../connectDB');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -30,6 +30,8 @@ router.get('/login',function(req,res){
                     console.log("ERROR!!!");
                 }
             }
+        });
+
 });
 
 module.exports = router;
