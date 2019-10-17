@@ -79,21 +79,22 @@
           </button>
         </div>
         <div class="modal-body">
-          <form>
+          <form action='/login' method='POST'>
             <div class="form-group">
               <label for="user-email" class="col-form-label">Email ID:</label>
-              <input type="email" class="form-control validate" id="email-name">
+              <input type="email" class="form-control validate" id="email-name" name="email">
             </div>
             <div class="form-group">
               <label for="Password" class="col-form-label">Password:</label>
-              <input type="password" id="defaultForm-pass" class="form-control validate">
+              <input type="password" id="defaultForm-pass" class="form-control validate" name="pass">
             </div>
-          </form>
+          
         </div>
         <div class="modal-footer">
           No Account? <a href="" data-toggle="modal" data-target="#modalSignupForm" data-dismiss="#modalLoginForm">Sign
             up! .</a>
           <button type="submit" class="btn btn-primary">Login</button>
+	  </form>
         </div>
       </div>
     </div>
